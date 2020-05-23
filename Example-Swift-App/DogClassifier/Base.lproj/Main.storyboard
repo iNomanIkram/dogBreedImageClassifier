@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DogClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xtF-IE-LSG">
+                                <rect key="frame" x="8" y="97" width="398" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Wp4-Gd-vLa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Breed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htU-rI-v1y">
+                                <rect key="frame" x="8" y="325" width="398" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDX-43-a0w">
+                                <rect key="frame" x="8" y="362" width="398" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="FHD-6B-XpN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZR-V5-bY1">
+                                <rect key="frame" x="144.5" y="433" width="125" height="30"/>
+                                <state key="normal" title="Pickup Dog Image"/>
+                                <connections>
+                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Oc-IQ-9EZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Classifier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcQ-Vo-wxb">
+                                <rect key="frame" x="8" y="60" width="398" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="5sE-aK-w3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xtF-IE-LSG" secondAttribute="trailing" constant="8" id="6aw-d8-Xye"/>
+                            <constraint firstItem="yDX-43-a0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="6vx-3X-bGr"/>
+                            <constraint firstItem="qZR-V5-bY1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="79P-vS-SXE"/>
+                            <constraint firstItem="yDX-43-a0w" firstAttribute="top" secondItem="htU-rI-v1y" secondAttribute="bottom" constant="8" id="GCd-SV-zfM"/>
+                            <constraint firstItem="ZcQ-Vo-wxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="JaH-MV-JRK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yDX-43-a0w" secondAttribute="trailing" constant="8" id="Jv3-Nr-DJz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yDX-43-a0w" secondAttribute="trailing" constant="8" id="KF3-vo-JKp"/>
+                            <constraint firstItem="xtF-IE-LSG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="KOt-ix-Iia"/>
+                            <constraint firstItem="qZR-V5-bY1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPn-mb-fBN"/>
+                            <constraint firstItem="yDX-43-a0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="X3N-vg-qHt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZcQ-Vo-wxb" secondAttribute="trailing" constant="8" id="Ysy-zJ-Mca"/>
+                            <constraint firstItem="xtF-IE-LSG" firstAttribute="top" secondItem="ZcQ-Vo-wxb" secondAttribute="bottom" constant="8" id="ep3-3j-11b"/>
+                            <constraint firstItem="htU-rI-v1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="gbf-K1-GZT"/>
+                            <constraint firstItem="htU-rI-v1y" firstAttribute="top" secondItem="xtF-IE-LSG" secondAttribute="bottom" constant="8" id="iUj-Zq-LcW"/>
+                            <constraint firstItem="yDX-43-a0w" firstAttribute="top" secondItem="htU-rI-v1y" secondAttribute="bottom" constant="8" id="js9-zw-eeW"/>
+                            <constraint firstItem="ZcQ-Vo-wxb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="kSS-w1-ebg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="htU-rI-v1y" secondAttribute="trailing" constant="8" id="mj4-wu-bCN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="breedLabel" destination="yDX-43-a0w" id="jtu-JT-cZf"/>
+                        <outlet property="imageView" destination="xtF-IE-LSG" id="xzX-Vb-zjk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
