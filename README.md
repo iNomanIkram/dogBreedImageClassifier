@@ -94,7 +94,7 @@ This CoreML Model is trained with the 80+ breeds of dogs and with more 1.8 milli
 # Test Application
 You can either test provided model by using our Example Demo App 
 
-![Demo Application Screenshot](https://github.com/iNomanIkram/dogClassifier/blob/master/demo-app.png)
+![Demo Application Screenshot](https://github.com/iNomanIkram/dogBreedImageClassifier/blob/master/demo-app.png)
 
 
 By following our instructions.
