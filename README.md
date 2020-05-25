@@ -102,7 +102,8 @@ By following our instructions.
 * lets initialize the model
 `let model = Dog_Breeds_Classifier()`
 * copy this method to process image and return breed name.
-``` // to process the image to identify the breed of dog
+``` 
+// to process the image to identify the breed of dog
     func breedLabel(forImage image:UIImage)->String?{
         if let imageBuffer = ImageProcessor.pixelBuffer(forImage: image.cgImage!){
             guard let breed = try? model.prediction(image: imageBuffer) else { fatalError("Error") }
@@ -110,5 +111,3 @@ By following our instructions.
         }
         return nil
     }
-    ```
-    
